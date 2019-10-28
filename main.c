@@ -3,19 +3,20 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int square(int n);
-
-int main(void)
+int compute_sum(int n)
 
 {
-	int result;
-	result = square(5);
-	printf("%d", result);
-	return 0;
+	int i;
+	int result = 0;
+	for (i=1; i<=n; i++)
+		result += i;
+		return result;
 }
 
-int square(int n)
-
+int main(void)
 {
-	return (n*n);
+	int sum;
+	sum = compute_sum(100);
+	printf("sum=%d\n", sum);
+	return 0;
 }
