@@ -25,3 +25,19 @@ int get_max(int a, int b)
 		return (b);
 }
 
+int main (void)
+{
+	int a;
+	int b;
+	
+	a = 2;
+	b = 5;
+	int add;
+	add = sumTwo(a,b);
+	
+	printf("a+b = %d\n", add);
+	printf("a*a = %d\n", square(a));
+	printf("max = %d", get_max(a,b));
+	
+	return 0;
+}
